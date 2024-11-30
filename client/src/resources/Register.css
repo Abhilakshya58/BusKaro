@@ -1,0 +1,171 @@
+/* Main container with split sections */
+.register-container {
+  display: flex;
+  height: 100vh;
+  background-color: #ffffff; /* Default background color */
+}
+
+/* Welcome message */
+.welcome-message {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fb8585;
+  z-index: 4;
+}
+
+/* Subheading with centered alignment */
+.subheading {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  max-width: 900px;
+  text-align: center;
+  color: #666666;
+  z-index: 4;
+  padding: 0 20px;
+}
+
+.subheading h2 {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* Left section with two-tone background and bus image */
+.left-image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffffff 60%, #ffe6e6 40%);
+  position: relative;
+}
+
+.bus-image {
+  width: 90%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* Right section with solid white background */
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+/* Register card styling */
+.register-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-top: 20px; /* Adjust margin for spacing */
+}
+
+.register-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #fb8585;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #fdb4b4;
+}
+
+.register-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 576px) {
+  .register-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Simple white background */
+    padding: 20px 0; /* Add padding at the top and bottom */
+    height: auto; /* Remove full screen height for better mobile handling */
+  }
+
+  .left-image-section, .bus-image {
+    display: none; /* Hide the image on mobile */
+  }
+
+  .right-section {
+    width: 100%; /* Take full width */
+    display: flex;
+    justify-content: center;
+  }
+
+  .register-card {
+    width: 100%;
+    max-width: 90%; /* Expand to fit the screen width */
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Added box shadow for mobile */
+    margin-top: 20px;
+  }
+
+  .welcome-message, .subheading {
+    position: static;
+    width: 100%; /* Full width */
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 10px;
+  }
+
+  .welcome-message {
+    font-size: 20px; /* Reduced font size for mobile */
+    margin-top: 10px; /* Add some margin at the top */
+  }
+
+  .subheading {
+    font-size: 17px; /* Reduced font size for mobile */
+    margin: 10px 0 20px 0; /* Adjust margins to ensure alignment and spacing */
+    text-align: center; /* Ensure the subheading is centered */
+    margin-left: 227px;
+        width: 300px;
+  }
+
+  .subheading h2 {
+    font-size: 17px; /* Reduced font size for mobile */
+    
+    
+  }
+}

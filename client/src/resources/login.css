@@ -1,0 +1,154 @@
+/* Main container with split sections */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Welcome message styling */
+.welcome-message {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 500;
+  color: #fb8585;
+  z-index: 4;
+}
+
+/* Subheading below the welcome message */
+.subheading {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 70%;
+  max-width: 900px;
+  color: #666666;
+  z-index: 4;
+  padding: 0 20px;
+}
+
+.subheading h2 {
+  font-size: 18px;
+}
+
+/* Left section with two-tone background and bus image */
+.left-image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffffff 60%, #ffe6e6 40%);
+  position: relative;
+}
+
+.bus-image {
+  width: 90%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* Right section with solid white background */
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+/* Login card styling */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Added soft shadow */
+  text-align: center;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #fb8585;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #fdb4b4;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 576px) {
+  .login-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      padding: 0 20px;
+  }
+
+  .left-image-section, .bus-image {
+      display: none; /* Hide the image and background on mobile */
+  }
+
+  .right-section {
+      width: 100%; /* Center the form */
+  }
+
+  .login-card {
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Adjusted shadow for mobile */
+  }
+
+  .welcome-message, .subheading {
+      position: static;
+      margin-top: 20px;
+      text-align: center;
+      padding: 0 10px;
+  }
+
+  .welcome-message {
+      font-size: 20px; /* Reduced font size for mobile */
+  }
+
+  .subheading {
+      font-size: 16px;
+      text-align: center; /* Ensure centering for mobile */
+      width: 300px;
+      margin-left: 274px;
+  }
+
+  .subheading h2 {
+      font-size: 17px; /* Reduced font size for mobile */
+     
+    
+  }
+}

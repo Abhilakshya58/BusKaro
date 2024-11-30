@@ -1,0 +1,55 @@
+.book-now-container {
+    margin: 20px;
+  }
+  
+  .bus-details-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light grey */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bus-info p {
+    margin: 10px 0;
+  }
+  
+  .apply-coupon-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .apply-coupon-btn {
+    background-color: #fb8585;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .apply-coupon-btn:hover{
+    background-color: #fe9595 !important;
+    color: white !important;
+  }
+  .primary-btn {
+    background-color: #fba2a2;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .disabled-btn {
+    background-color: rgb(174, 167, 167);
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  .action-container .btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+  

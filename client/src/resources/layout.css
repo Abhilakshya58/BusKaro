@@ -1,0 +1,103 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fb8585;
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+    z-index: 10;
+  }
+  .logo{
+    color: white;
+  }
+  
+  .navbar .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar .navbar-links.expanded {
+    display: flex;
+    flex-direction: column; /* Stack links vertically on mobile */
+    width: 100%;
+    background-color: #fb8585;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 10px 20px;
+    border-radius: 0 0 5px 5px;
+    z-index: 100;
+  }
+  
+  .navbar .navbar-links .navbar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .navbar .navbar-links .navbar-item i {
+    font-size: 20px;
+  }
+  
+  .navbar .navbar-links .navbar-item span {
+    font-size: 16px;
+  }
+  
+  .navbar .navbar-links .active-menu-item {
+    border-bottom: 2px solid white;
+  }
+  
+  .navbar .navbar-user {
+    font-size: 14px;
+  }
+  
+  .navbar .role {
+    font-size: 14px;
+    color: lightgray;
+  }
+  
+  /* Hamburger menu button */
+  .navbar .navbar-toggle {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Close Button for Mobile */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    z-index: 200;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar .navbar-toggle {
+      display: block; /* Show toggle button only on mobile */
+    }
+  
+    .navbar .navbar-links {
+      display: none; /* Hidden by default on mobile */
+    }
+  
+    .navbar .navbar-links.expanded {
+      display: flex; /* Show menu when expanded */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .navbar .navbar-toggle {
+      display: none; /* Always hide the menu button on larger screens */
+    }
+  }
+  

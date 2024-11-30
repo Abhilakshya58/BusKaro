@@ -1,0 +1,71 @@
+/* Booking container */
+.booking-container {
+    padding: 20px;
+    width: 100%;
+}
+
+.booking-table {
+    margin-top: 20px;
+}
+
+/* Modal content styling */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.modal-value {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Table responsiveness */
+.ant-table-wrapper {
+    overflow-x: auto;
+}
+
+/* Cursor pointer for print ticket */
+.action-link {
+    color: #1890ff;
+    cursor: pointer;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+    .booking-container {
+        padding: 10px;
+    }
+
+    .modal-content {
+        gap: 12px;
+    }
+
+    .modal-label {
+        font-size: 14px;
+    }
+
+    .modal-value {
+        font-size: 14px;
+    }
+
+    .booking-table {
+        margin-top: 10px;
+    }
+
+    .ant-table-wrapper {
+        overflow-x: scroll;
+    }
+}

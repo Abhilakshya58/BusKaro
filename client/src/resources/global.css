@@ -1,0 +1,171 @@
+.h-screen{
+    height: 100vh;
+}
+
+.w-400{
+    width: 400px;
+}
+
+input {
+    height: 40px;
+    border: 2px solid gray;
+    width: 100%;
+    padding-left: 20px;
+}
+select{
+    height: 40px;
+    border: 2px solid gray;
+    width: 100%;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.card{
+    border: 1px solid gray;
+    box-shadow: 0 0 1px gray;
+    border-radius: 0 !important;
+}
+
+.text-2xl{
+    font-size: 30px !important;
+}
+.text-xl{
+    font-size: 25px !important;
+}
+i{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+h2{
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.text-lg{
+    font-size: 20px !important;
+}
+.text-md{
+    font-size: 18px !important;
+}
+
+.primary-btn{
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.secondary-btn{
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.spinner-parent{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.586);
+    z-index: 10000;
+    
+}
+
+.spinner-border{
+    color: white !important;
+    height: 80px !important;
+    width: 80px !important;
+}
+.underline{
+    text-decoration: underline;
+    cursor: pointer;
+    padding-top: 25px;
+}
+
+.bus-details-container {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light grey background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .bus-name {
+    font-weight: 700;
+    color: #4CAF50; /* Secondary color for bus name */
+    margin-bottom: 10px;
+  }
+  
+  .bus-route {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6c757d; /* Muted color for route */
+    margin-bottom: 15px;
+  }
+  
+  .bus-divider {
+    margin: 15px 0;
+    border-color: #dee2e6;
+  }
+  
+  .bus-info p {
+    margin: 10px 0;
+  }
+  
+  .label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .value {
+    font-weight: 500;
+    margin-left: 10px;
+    color: #007bff; /* Blue color for values */
+    font-size: 16px;
+  }
+  
+  .bus-info p .value {
+    font-size: 16px;
+  }
+
+/* Updated .disabled-btn to ensure cursor is disabled */
+.disabled-btn {
+    background-color: rgb(174, 167, 167) !important;
+    color: white;
+    border: none !important;
+    padding: 10px 20px;
+    border-radius: 5px !important;
+    cursor: not-allowed !important; /* Ensures cursor is disabled */
+}
+
+
+/* Add this to your App.css or another global CSS file */
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #ticketContent, #ticketContent * {
+        visibility: visible;
+    }
+    #ticketContent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    /* Hide Print and Close Buttons on Print */
+    .ant-modal-footer {
+        display: none;
+    }
+}
+
+  
